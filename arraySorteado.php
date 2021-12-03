@@ -1,6 +1,13 @@
 <?php
 
-function popularArray(array $array, int $total = 20){
+/**
+ * Função para popular o array com números aleatórios
+ *
+ * @param array $array
+ * @param int $total
+ * @return array
+ */
+function popularArray(array $array, int $total = 20): array{
     for ($i = 0; $i <= $total; $i++){
         $array[] = rand(1, 9);
     }
